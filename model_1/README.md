@@ -13,7 +13,7 @@ It contains car listings with details such as:
 - **Year** (Manufacturing Year)
 - **Price** (Car Price)
 - **Kilometers Driven** (Distance the car has been driven)
-- **Fuel Type** (Petrol/Diesel/CNG/Electric)
+- **Fuel Type** (Petrol/Diesel/LPG)
 
 ## Files in the Repository
 - `Car_Price_Prediction.ipynb` – Jupyter Notebook for data cleaning, preprocessing, model training, and evaluation.
