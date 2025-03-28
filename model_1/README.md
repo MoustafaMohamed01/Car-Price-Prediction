@@ -60,7 +60,7 @@ streamlit run app.py
 ### **1. Clone the Repository**
 ```bash
 git clone https://github.com/MoustafaMohamed01/Car-Price-Prediction.git
-cd Car-Price-Prediction
+cd Car-Price-Prediction\model_1
 ```
 
 ### **2. Install Required Packages**
