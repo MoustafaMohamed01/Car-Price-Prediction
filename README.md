@@ -1,4 +1,4 @@
-# Car Price Prediction Project (Model 1)
+# Car Price Prediction Project
 
 ## Overview
 This repository contains a **Car Price Prediction** model that estimates the price of a used car based on various features such as **name, company, year, kilometers driven, and fuel type**. This model uses **Linear Regression** and is deployed as a **Streamlit web application**.
