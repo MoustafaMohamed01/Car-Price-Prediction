@@ -1,13 +1,13 @@
-# Car Price Prediction
+# Car Price Prediction Project (Model 1)
 
 ## Overview
-This project is a **Car Price Prediction** model that estimates the price of a used car based on various features like **name, company, year, kilometers driven, and fuel type**. The model is built using **Linear Regression** and is deployed as a **Streamlit web application**.
+This repository contains a **Car Price Prediction** model that estimates the price of a used car based on various features such as **name, company, year, kilometers driven, and fuel type**. This model uses **Linear Regression** and is deployed as a **Streamlit web application**.
 
 ## Dataset
-The dataset used in this project is `quikr_car.csv`, sourced from:
+The dataset used in this project is **quikr_car.csv**, sourced from:
 [Car Price Predictor Dataset](https://github.com/rajtilakls2510/car_price_predictor/blob/master/quikr_car.csv)
 
-It contains car listings with details such as:
+The dataset contains car listings with details such as:
 - **Name** (Car Model)
 - **Company** (Brand)
 - **Year** (Manufacturing Year)
@@ -15,62 +15,73 @@ It contains car listings with details such as:
 - **Kilometers Driven** (Distance the car has been driven)
 - **Fuel Type** (Petrol/Diesel/CNG/Electric)
 
-## Files in the Repository
-- `Car_Price_Prediction.ipynb` – Jupyter Notebook for data cleaning, preprocessing, model training, and evaluation.
-- `app.py` – Python script for the Streamlit web app to interact with the model.
-- `Car_Price_Prediction.py` – Python script containing the main model implementation.
-- `LinearRegressionModel.pkl` – Trained Linear Regression model saved using Pickle.
-- `unique_values.csv` – Contains unique values of categorical columns used for encoding.
-- `quikr_car.csv` – Original dataset.
+---
 
-## Data Preprocessing
-The dataset undergoes the following preprocessing steps:
-1. **Cleaning:**
-   - Removing non-numeric values from columns.
-   - Removing outliers in **Price**.
-   - Handling missing values.
-   - Converting **year** and **kms_driven** to integers.
-   - Standardizing car **name** (keeping first three words).
-2. **Encoding Categorical Data:**
-   - One-Hot Encoding applied to **name, company, and fuel type**.
-3. **Feature Selection & Splitting:**
-   - Target variable: `Price`
-   - Features: `name, company, year, kms_driven, fuel_type`
-   - Splitting into training and testing sets (80-20 split).
-
-## Model Training
-- **Algorithm:** Linear Regression
-- **Pipeline:**
-  - One-Hot Encoding for categorical features.
-  - Applying **Linear Regression** to predict car price.
-- **Evaluation:**
-  - Using **R² Score** to measure model accuracy.
-  - Finding the best **random state** for train-test split to maximize R².
-
-## Model Deployment (Streamlit App)
-The model is integrated into a **Streamlit** web app where users can input car details and get a price prediction.
-
-### **Run the Web App**
-To run the web app, execute:
-```bash
-streamlit run app.py
+## File Structure
+```
+Car-Price-Prediction/
+│
+├── model_1/                          # Folder containing files for Model 1
+│   ├── Car_Price_Prediction.ipynb    # Jupyter notebook for data cleaning, preprocessing, and model training
+│   ├── app.py                        # Streamlit app for car price prediction
+│   ├── Car_Price_Prediction.py       # Python script for implementing the model
+│   ├── LinearRegressionModel.pkl     # Pickled model for predictions
+│   ├── unique_values.csv             # File with unique values for encoding categorical data
+│   ├── requirements.txt              # List of Python dependencies for the project
+│   └── quikr_car.csv                 # Original dataset for Model 1 preprocessing
+│
+├── requirements.txt                  # List of Python dependencies for the project
+└── README.md                         # Main project README
 ```
 
-## Installation & Setup
-### **1. Clone the Repository**
-```bash
-git clone https://github.com/MoustafaMohamed01/Car-Price-Prediction.git
-cd Car-Price-Prediction
-```
+---
 
-### **2. Install Required Packages**
-```bash
-pip install -r requirements.txt
-```
+## Install dependencies
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MoustafaMohamed01/Car-Price-Prediction.git
+   cd Car-Price-Prediction
+   ```
+2. Install the required libraries:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-### **3. Run the Jupyter Notebook**
-```bash
-jupyter notebook
-```
-Open `Car_Price_Prediction.ipynb` and run all cells.
+---
 
+## Run the Model
+
+### **Model 1: Linear Regression**
+
+1. Open the Jupyter notebook:
+   ```bash
+   jupyter notebook
+   ```
+2. Open and run the `Car_Price_Prediction.ipynb` notebook for data preprocessing, model training, and evaluation.
+
+#### **Streamlit Web App for Model 1**
+To run the web app for Model 1, use the following command:
+```bash
+streamlit run model_1/app.py
+```
+This will launch the Streamlit app, where you can input car details and get a predicted price.
+
+---
+
+## File Descriptions
+
+### **Model 1:**
+
+- **Car_Price_Prediction.ipynb**: Jupyter notebook for data preprocessing, model training, and evaluation using **Linear Regression**.
+- **app.py**: Streamlit app for **Model 1**, allowing users to interact with the model and make predictions.
+- **Car_Price_Prediction.py**: Python script for implementing the model and training using **Linear Regression**.
+- **LinearRegressionModel.pkl**: The trained **Linear Regression** model file (saved using **Pickle**) that is used for making predictions.
+- **unique_values.csv**: Contains the unique values of categorical columns for encoding.
+- **quikr_car.csv**: The **original dataset** for Model 1.
+- **cleaned.csv**: The **cleaned version** of the dataset after preprocessing.
+
+---
+
+## How to Contribute
+
+Feel free to fork this repository, make changes, and submit pull requests. If you have improvements or suggestions, please open an issue or create a pull request.
