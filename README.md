@@ -26,9 +26,10 @@ Car-Price-Prediction/
 │   ├── app.py                        # Streamlit app for car price prediction
 │   ├── Car_Price_Prediction.py       # Python script for implementing the model
 │   ├── LinearRegressionModel.pkl     # Pickled model for predictions
-│   ├── unique_values.csv             # File with unique values for encoding categorical data
 │   ├── requirements.txt              # List of Python dependencies for the project
-│   └── quikr_car.csv                 # Original dataset for Model 1 preprocessing
+│   └── data/                         
+│       ├── unique_values.csv             # File with unique values for encoding categorical data
+│       └── quikr_car.csv                 # Original dataset for Model 1 preprocessing
 │
 ├── requirements.txt                  # List of Python dependencies for the project
 └── README.md                         # Main project README
